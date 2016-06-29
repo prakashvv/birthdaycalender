@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script rel="script" src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <div id="header"><h2>Birthday Calender</h2></div>
+        <div id="calender">
+        </div>
+        <div id="footer">
+            <table>
+                <tr>
+                    <td rowspan="3"><label>Birthdates:</label><br><textarea rows="25" cols="100" id="input"></textarea></td>
+                    <td rowspan="3" width="25px"></td>
+                    <td><label>Display: </label></td>
+                    <td>
+                        <select id="mode">
+                            <option value="week">By Week</option>
+                            <option value="month">By Month</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>For: </label></td>
+                    <td><input type="text" id="year" value="2016" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td height="25%" width="25%"><button onclick="updateCalender()">Update</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
